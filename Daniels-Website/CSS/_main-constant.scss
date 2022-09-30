@@ -1,0 +1,161 @@
+// Start Variables
+$white: #ffffff;
+$white-2: #f4f4f4;
+$bg-light: #f7f7f7;
+$black: #000000;
+$black-2: #1c1c1c;
+$black-3: #343434;
+$gray: #748182;
+// End Variables
+
+
+// Start Mixins
+@mixin breakpoint($point) {
+    @if $point == sm {
+        @media (min-width: 576) {
+            @content;
+        }
+    } @else if $point == md {
+        @media (min-width: 768px){
+            @content;
+        }
+    } @else if $point == lg {
+        @media (min-width: 992px){
+            @content;
+        }
+    } @else if $point == xl {
+        @media (min-width: 1200px){
+            @content;
+        }
+    } @else if $point == xxl {
+        @media (min-width: 1400px){
+            @content;
+        }
+    }
+}
+// End Mixins
+
+
+
+// Start Loops
+@for $i from 1 through 5 {
+    .fs-#{$i}rem {
+        font-size: #{$i+ 0rem};
+    }
+}
+// End Loops
+
+
+// Start Animations
+.animate__backInLeft {
+    animation-name: backInLeft;
+    animation-duration: 2.5s;
+}
+
+@-webkit-keyframes backInLeft {
+    0% {
+        transform: translateX(-650px);
+    }
+
+    80% {
+        transform: translateX(0);
+    }
+}
+// End Animations
+
+
+
+
+
+*{
+    transition: all .5s !important;
+}
+
+i{
+    transition: all 0s !important;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+p{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: $gray;
+}
+
+.sec-py {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.px-15px{
+    padding-right: 15px !important;
+    padding-left: 15px !important;
+    box-sizing: border-box;
+}
+
+.container{
+    @include breakpoint(xxl){
+        width: 1170px !important;
+    }
+}
+
+.button{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    border: 1px solid $black-2;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all .5s;
+}
+
+.button-primary{
+    background-color: $black-2;
+    color: $white;
+    
+    &:hover{
+        background-color: transparent;
+        color: $black-2;
+    }
+}
+
+.button-outline{
+    background-color: transparent;
+    color: $black-2;
+    
+    &:hover{
+        background-color: $black-2;
+        color: $white;
+    }
+}
+
+.title{
+    margin-bottom: 80px;
+    h3{
+        font-weight: 900;
+        font-size: 40px;
+        position: relative;
+        z-index: 4;
+        color: $black-3;
+        width: fit-content;
+
+        &::after{
+            content: "";
+            width: 100%;
+            height: 30px;
+            background-image: url(../assests/dots.png);
+            background-repeat: repeat;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            z-index: -1;
+        }
+    }
+    
+
+    
+}

@@ -1,0 +1,55 @@
+.container {
+    height: 290px;
+}
+
+.four {
+    background-color: #f8f8f8;
+}
+
+.four>h3 {
+    font-weight: normal;
+}
+
+.four .description {
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.four .partition {
+    width: 28%;
+    text-align: start;
+    display: inline-block;
+    margin: 30px 10px;
+}
+
+.four .partition h3 {
+    color: #303030;
+    font-weight: normal;
+}
+
+.four .partition p {
+    font-size: 17px;
+    line-height: 32px;
+    color: #686868;
+}
+
+.five {
+    padding: 80px 5% !important;
+    background-color: #8e7754;
+    color: #ffffff;
+}
+
+.five .partition {
+    float: left;
+    width: 25%;
+}
+
+.five .partition h3 {
+    margin: 15px auto;
+    font-size: 52px;
+    font-weight: lighter;
+}
+
+.five .partition p {
+    font-size: 20px;
+}

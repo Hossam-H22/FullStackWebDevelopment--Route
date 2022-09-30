@@ -1,0 +1,507 @@
+/* ---->>  Fonts Start  <<---- */
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ---->>  Fonts End  <<---- */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.SideSpacer {
+    width: 1150px !important;
+    margin: auto;
+}
+
+.headline {
+    font-size: 40px;
+    line-height: 30px;
+    text-align: center;
+    margin: auto auto 20px;
+    color: #333333;
+}
+
+.line .one,
+.line .two,
+.line .three {
+    margin: 3.5px auto;
+    width: 70px;
+    height: 1px;
+    background: #ff305b;
+}
+
+.line .two {
+    width: 150px;
+}
+
+.clr {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.home-container {
+    background: rgba(0, 0, 0, 0.8) url("assests/asset 11.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-position: center;
+    height: 100vh;
+    color: #ffffff;
+    padding-top: 0.1px;
+    position: relative;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #000000;
+    z-index: 10;
+}
+
+.logo {
+    color: #ff305b;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    float: left;
+    line-height: 25px;
+    margin: 18px 14px;
+}
+
+nav a {
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+nav ul {
+    float: right;
+    padding: 0;
+    margin: 0 !important;
+}
+
+nav ul li {
+    float: left;
+    margin: 20px 10px;
+}
+
+.home {
+    text-align: center;
+    margin: 41vh auto;
+}
+
+.home h4 {
+    font-size: 24px;
+    line-height: 26.5px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.home h1 {
+    font-size: 70px;
+    line-height: 77px;
+    margin: 10px;
+    color: #ff305b;
+}
+
+.home p {
+    font-size: 26px;
+    line-height: 31.5px;
+    font-weight: lighter;
+    margin: 10px;
+}
+
+.about {
+    padding: 100px 0 120px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about>div {
+    width: 950px !important;
+    margin: auto;
+}
+
+.about .image {
+    border: 8px solid #555555;
+    border-radius: 8px;
+    float: left;
+    box-sizing: border-box;
+    width: 37%;
+}
+
+.about img {
+    position: relative;
+    top: 25px;
+    left: 15px;
+    border-radius: 8px;
+    width: 100%;
+    z-index: 0;
+}
+
+.about .text {
+    width: 63%;
+    box-sizing: border-box;
+    float: left;
+    padding: 0 0 0 9%;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 25px;
+    color: #555555;
+}
+
+.about .text h3 {
+    font-size: 34px;
+    font-weight: 600;
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 22px;
+    margin: auto auto 25px;
+    color: #333333;
+    border-left: 4px solid #ff305b;
+    padding: 0 10px;
+}
+
+.about .text>p {
+    color: #555555;
+    border-bottom: 1px dashed #999999;
+    margin: auto auto 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+.about .text .detail {
+    width: 100%;
+}
+
+.about .text .details>div {
+    float: left;
+    box-sizing: border-box;
+    width: max-content;
+    margin: auto 30px auto auto;
+}
+
+.about .text .details>div>p {
+    margin: 0;
+}
+
+.about .text .details>div span {
+    display: inline-block;
+    font-weight: 500;
+    margin: 0 5px 15px 0;
+    color: #000000;
+}
+
+.button {
+    font-size: 16px;
+    line-height: 25px;
+    padding: 0 20px;
+    position: relative;
+    background: #fb1b60;
+    border-radius: 5px;
+    color: #ffffff;
+    display: inline-block;
+    margin-right: 14px;
+}
+
+.about .button ul li {
+    display: inline-block;
+}
+
+.about .button ul .button-text {
+    margin: 10px 0;
+}
+
+.about .button ul #download {
+    background: url("assests/download_icon.jpg");
+    width: 22px;
+    height: 22px;
+}
+
+.about .button ul #hire {
+    background: url("assests/hire_icon.jpg");
+    width: 22px;
+    height: 22px;
+}
+
+.services {
+    background: #f1f1f1;
+    padding: 100px 0 54px;
+}
+
+.services .card {
+    width: 25%;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 60px 10px;
+}
+
+.services .card img {
+    width: 40px;
+    height: 40px;
+}
+
+.services .card h4 {
+    font-size: 24px;
+    line-height: 26.5px;
+    font-weight: 600;
+    margin: 16px auto 15px;
+}
+
+.services .card p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    color: #555555;
+    margin: 0;
+}
+
+.portfolio .first {
+    padding: 100px 0 70px;
+}
+
+.portfolio .first .categories {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.portfolio .first a {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    margin: auto 15px;
+}
+
+.portfolio .first img {
+    width: 33.3333333%;
+    float: left;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.portfolio .second {
+    background: #f1f1f1;
+    padding: 65px 0;
+}
+
+.portfolio .second .card {
+    text-align: center;
+    width: 25%;
+    box-sizing: border-box;
+    padding: 20px;
+    float: left;
+}
+
+.portfolio .second .card h5 {
+    font-size: 26px;
+    line-height: 28.5px;
+    margin: 10px auto 10px;
+}
+
+.portfolio .second .card p {
+    font-size: 16px;
+    line-height: 17.5px;
+    margin: 0;
+}
+
+.testimonial {
+    padding: 100px 0 70px;
+}
+
+.testimonial .card {
+    width: 58%;
+    max-width: 700px;
+    border-radius: 5px;
+    background: #f1f1f1;
+    margin: auto;
+    padding: 40px 40px 50px;
+    margin: 40px auto;
+    box-sizing: border-box;
+}
+
+.testimonial .card>img {
+    border-radius: 50%;
+    max-width: 100px;
+    width: 18%;
+    float: left;
+    box-sizing: border-box;
+    margin: 10px 3.5%;
+}
+
+.testimonial .card .card-text {
+    float: left;
+    max-width: 75%;
+}
+
+.testimonial .card h4 {
+    font-size: 26px;
+    line-height: 28.5px;
+    margin: auto auto 15px auto;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
+
+.testimonial .card h5 {
+    color: #777777;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 16.5px;
+    margin: auto;
+}
+
+.testimonial .card h5 img {
+    width: 8px;
+}
+
+.testimonial .card p {
+    margin: 10px auto 15px;
+    font-family: 'Roboto', sans-serif;
+    color: #555555;
+    font-style: italic;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.testimonial .card .stars img {
+    width: 15px;
+}
+
+.blog {
+    background: #f1f1f1;
+    padding: 100px 0;
+}
+
+.blog .card {
+    margin-top: 35px;
+    width: 33.3333333333%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+
+.blog .card>div {
+    background: #ffffff;
+}
+
+.blog .card .card-img {
+    width: 100%;
+    height: 200px;
+}
+
+.blog .card .card-details {
+    padding: 20px;
+    color: #555555;
+}
+
+.blog .card .card-details p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.blog .card .card-details h3 {
+    margin: 10px auto 15px;
+    font-size: 24px;
+    line-height: 26.5px;
+    color: #000000;
+    font-weight: 600;
+}
+
+.blog .card .card-details .card-link {
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.contact {
+    padding: 100px 0;
+    text-align: start;
+    width: 750px !important;
+}
+
+::placeholder {
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact form #name,
+.contact form #email,
+.contact form #subject,
+.contact form textarea {
+    width: 100%;
+    min-height: 40px;
+    display: block;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+    padding: 6px 12px;
+    font-size: 14px;
+    color: #555555;
+    margin: 27px 0;
+    box-sizing: border-box;
+}
+
+.contact form>div {
+    margin: 0;
+    padding: 0;
+}
+
+.contact form #name,
+.contact form #email {
+    display: inline-block;
+    width: 48%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.contact form #name {
+    margin: 40px 3.5% 0 0;
+}
+
+.contact form button {
+    border: unset;
+    height: 40px;
+    font-size: 14px;
+}
+
+footer {
+    background: #333333;
+    text-align: center;
+    padding: 50px 0;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+footer img {
+    height: 16px;
+    padding: 15px 10px;
+}
+
+footer div .profile {
+    color: #ff305b;
+    font-weight: 400;
+}

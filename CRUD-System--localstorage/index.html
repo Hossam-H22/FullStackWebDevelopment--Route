@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="CSS/Icons/fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="CSS/Icons/ionicons/css/ionicons.min.css" />
+  <link rel="stylesheet" href="CSS/Bootstrap/bootstrap.css" />
+  <link rel="stylesheet" href="CSS/main.css" />
+
+  <title>Crud System</title>
+</head>
+
+<body>
+  <div class="container">
+
+    <h1 class="text-uppercase text-center pt-5 fw-bolder">crud System</h1>
+
+    <div class="my-5">
+      <input type="text" class="form-control mb-3 d-none" name="name" id="productIdInput">
+
+      <label for="productNameInput">Product Name :</label>
+      <span class="text-danger ms-2" id="nameErorr"></span>
+      <input type="text" class="form-control mb-3" name="name" id="productNameInput">
+
+
+      <label for="productPriceInput">Product Price :</label>
+      <span class="text-danger ms-2" id="priceErorr"></span>
+      <input type="text" class="form-control mb-3" name="price" id="productPriceInput">
+
+
+      <label for="productCategoryInput">Product Category :</label>
+      <span class="text-danger ms-2" id="categoryErorr"></span>
+      <input type="text" class="form-control mb-3" name="category" id="productCategoryInput">
+
+
+      <label for="productDescriptionInput">Product Description :</label>
+      <span class="text-danger ms-2" id="descriptionErorr"></span>
+      <textarea type="text" class="form-control mb-3" name="description" id="productDescriptionInput"
+        rows="4"></textarea>
+
+
+      <button class="btn btn-info mt-3" onclick="addOrUpdate();" id="product-btn">Add Product</button>
+    </div>
+
+    <div class="py-4"></div>
+
+
+
+    <input type="text" name="search" id="search" class="form-control w-50 mx-auto" oninput="searchProduct();"
+      placeholder="Search">
+
+    <div class="my-5 pb-5">
+      <table class="table text-center">
+        <thead>
+          <th>Index</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Category</th>
+          <th>Description</th>
+          <th>Delete</th>
+          <th>Update</th>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+      </table>
+    </div>
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <script src="JS/Bootstrap/bootstrap.bundle.js"></script>
+  <script src="JS/index.js"></script>
+
+</body>
+
+</html>

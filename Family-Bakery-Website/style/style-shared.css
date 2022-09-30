@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Alegreya', serif;
+}
+
+nav {
+    background-color: #ffffff;
+}
+
+nav a {
+    color: #ffffff;
+}
+
+nav img {
+    float: left;
+    width: 180px;
+    padding: 21px 0 21px 107px;
+}
+
+nav ul {
+    float: right;
+    margin: 0 107px 0 0;
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 34px 15px 32px 15px;
+    font-size: 18px;
+}
+
+nav ul li a {
+    color: #999999;
+}
+
+
+/* ........................... */
+
+.container {
+    background: url("../assets/drew-coffman-1872.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+/* ................ */
+
+.one .FirstSubtitle {
+    margin: 48px auto auto auto;
+    font-size: 56px;
+}
+
+.two img {
+    display: inline-block;
+}
+
+.two .text {
+    margin: 30px 0 0 80px;
+}
+
+.part {
+    padding: 90px 0;
+    text-align: center;
+}
+
+.text {
+    display: inline-block;
+    text-align: start;
+    vertical-align: top;
+    width: min-content;
+}
+
+.six {
+    background-color: #3f3d38;
+    color: #969696;
+    padding: 45px 6% !important;
+}
+
+.six .partition {
+    width: 21.5%;
+    float: left;
+    margin: auto 1.5%;
+    text-align: start;
+}
+
+.six .partition>p {
+    line-height: 30px;
+}
+
+.six li img {
+    width: 20px;
+}
+
+.six ul li p {
+    margin: 2px auto auto auto;
+}
+
+.six ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 10px 0;
+}
+
+.six .back ul {
+    background-image: url("../assets/contact-details-map2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.six .back ul li img {
+    width: 25px;
+    margin-right: 5px;
+}
+
+.seven {
+    background-color: #353330;
+    color: #797979;
+    padding: 55px 0 !important;
+}
+
+.seven p {
+    font-size: 14px;
+}
+
+.seven>div>img {
+    width: 45px;
+    margin: auto 4px;
+}
+
+
+/* ................ */
+
+h3 {
+    font-weight: normal !important;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li p {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.clr {
+    clear: both;
+}
+
+.headline {
+    font-size: 32px;
+    color: #303030;
+}
+
+.FirstSubtitle {
+    font-size: 22px;
+}
+
+.SecondSubtitle {
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+}
+
+.ThirdSubtitle {
+    font-size: 17px;
+}
+
+.description {
+    line-height: 32px;
+    font-size: 17px;
+    width: 565px;
+    color: #686868;
+}
+
+.Button {
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 18px 25px;
+    margin: 30px 5px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.Main-Button {
+    background-color: #8e7754;
+}
+
+.Seccond-Button {
+    border: 2px white solid;
+}

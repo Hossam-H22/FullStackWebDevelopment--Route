@@ -1,0 +1,47 @@
+@media (max-width: 576px) {
+    .about img {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .home .intro-title {
+        font-size: 4.5rem;
+    }
+    .home .intro-subtitle {
+        font-size: 2.5rem;
+    }
+    .about .box-shadow-full {
+        padding: 4rem 3rem;
+    }
+    .testimonials-box .description {
+        padding: 0 5rem;
+    }
+    .box-shadow-full {
+        padding: 3rem;
+    }
+    .blog .card-blog {
+        margin-bottom: 3rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .testimonials-box .description {
+        padding: 0 8rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .testimonials-box .description {
+        padding: 0 13rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1140px;
+    }
+    .testimonials-box .description {
+        padding: 0 13rem;
+    }
+}

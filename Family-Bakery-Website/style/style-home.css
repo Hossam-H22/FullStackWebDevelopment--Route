@@ -1,0 +1,233 @@
+/*******-------->>>> First Part <<<<--------*********/
+
+.container {
+    height: 950px;
+}
+
+.one .first {
+    margin: 164px auto 0 auto !important;
+    font-size: 22px !important;
+}
+
+.one h1 {
+    font-size: 76px;
+    margin: 5px auto;
+    font-family: 'Alegreya', serif;
+    font-weight: lighter;
+    letter-spacing: 1px;
+}
+
+.one .second {
+    font-size: 24px;
+    margin: 18px auto 0 auto;
+    width: 700px;
+    line-height: 40px;
+}
+
+.design {
+    height: 47px;
+    width: 28px;
+    border: 2px #ffffff solid;
+    border-radius: 50px;
+    margin: 90px auto 0 auto;
+}
+
+.design>div {
+    height: 10px;
+    width: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 9px;
+}
+
+
+/*******-------->>>> Secend Part <<<<--------*********/
+
+.two .list>div {
+    margin: 20px auto;
+    color: #686868;
+}
+
+.two .list p {
+    display: inline-block;
+    margin: 15px 0 0 12px;
+    vertical-align: top;
+    width: fit-content;
+}
+
+.two .list img {
+    width: 25px;
+    border: 1px #cccccc solid;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+
+/*******-------->>>> Third Part <<<<--------*********/
+
+.three {
+    background-color: #f8f8f8;
+}
+
+.three img {
+    display: inline-block;
+}
+
+.three .text {
+    margin: 50px 80px 0 0;
+}
+
+
+/*******-------->>>> Fourth Part <<<<--------*********/
+
+.four {
+    margin: 0 5%;
+    padding: 80px 0 54px 0;
+}
+
+.four .headline {
+    margin-top: 0;
+}
+
+.four .description {
+    font-size: 17px;
+    width: max-content;
+    margin: auto;
+}
+
+.four .partition {
+    width: 29%;
+    text-align: center;
+    display: inline-block;
+    margin: 19px;
+}
+
+.four .partition img {
+    width: 100%;
+}
+
+.four .partition h3 {
+    font-size: 22px;
+}
+
+.four .partition p {
+    line-height: 32px;
+    color: #686868;
+    padding: 0 8px;
+}
+
+
+/*******-------->>>> Fifth Part <<<<--------*********/
+
+.five {
+    background-color: #f8f8f8;
+}
+
+.five .text {
+    float: left;
+    margin: auto 2% auto 9%;
+    width: 40%;
+}
+
+.five .text p {
+    width: 100%;
+}
+
+.five ul {
+    margin-top: 23px;
+}
+
+.five ul li p {
+    margin: 10px auto 34px 16px;
+    color: #686868;
+    width: fit-content !important;
+}
+
+.five ul li img {
+    width: 25px;
+    border-radius: 50%;
+    background-color: #8e7754;
+    padding: 5px;
+}
+
+.five .map {
+    float: left;
+    margin: auto 9% auto auto;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 40%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 100%;
+}
+
+
+/*******-------->>>> Sixth Part <<<<--------*********/
+
+.six {
+    background-color: #3f3d38;
+    color: #969696;
+    padding: 45px 6% !important;
+}
+
+.six .partition {
+    width: 21.5%;
+    float: left;
+    margin: auto 1.5%;
+    text-align: start;
+}
+
+.six .partition>p {
+    line-height: 30px;
+}
+
+.six li img {
+    width: 20px;
+}
+
+.six ul li p {
+    margin: 2px auto auto auto;
+}
+
+.six ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 10px 0;
+}
+
+.six .back ul {
+    background-image: url("assets/contact-details-map2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.six .back ul li img {
+    width: 25px;
+    margin-right: 5px;
+}
+
+
+/*******-------->>>> Seventh Part <<<<--------*********/
+
+.seven {
+    background-color: #353330;
+    color: #797979;
+    padding: 55px 0 !important;
+}
+
+.seven p {
+    font-size: 14px;
+}
+
+.seven>div>img {
+    width: 45px;
+    margin: auto 4px;
+}

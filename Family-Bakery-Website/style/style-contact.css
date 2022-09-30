@@ -1,0 +1,94 @@
+.container {
+    height: 290px;
+    background-position: center !important;
+}
+
+.five {
+    text-align: start !important;
+    padding: 60px 3% 90px 9% !important;
+}
+
+.five .text {
+    float: left;
+    margin-left: 7%;
+    width: 30%;
+}
+
+.five .text p {
+    width: 100%;
+}
+
+.five ul {
+    margin-top: 23px;
+}
+
+.five ul li p {
+    margin: 10px auto 34px 16px;
+    color: #686868;
+    width: fit-content !important;
+}
+
+.five ul li img {
+    width: 25px;
+    border-radius: 50%;
+    background-color: #8e7754;
+    padding: 5px;
+}
+
+.five .form {
+    float: left;
+    width: 60%;
+    /* overflow: auto; */
+}
+
+.five .form input,
+.five .form textarea {
+    height: 50px;
+    padding: 0 0 0 15px;
+    border: 1px solid #E6E6E6;
+    width: 100%;
+    margin-bottom: 10px;
+    /* display: block; */
+}
+
+.five .form textarea {
+    height: 300px;
+    padding: 15px 0 0 15px;
+}
+
+.five .form>div {
+    width: 102%;
+}
+
+#name {
+    float: left;
+    width: 46%;
+}
+
+#email {
+    float: right;
+    width: 46%;
+}
+
+.five .form .Main-Button {
+    width: fit-content;
+    color: #ffffff;
+    padding: 11px 20px !important;
+    line-height: 1.3rem;
+    font-size: 16px;
+    margin: 0;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 100%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 100%;
+}

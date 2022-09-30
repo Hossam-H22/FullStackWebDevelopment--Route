@@ -1,0 +1,40 @@
+.container {
+    height: 290px;
+    background-position: center !important;
+}
+
+.one .SecondSubtitle {
+    font-size: 15px;
+}
+
+.four .partition {
+    width: 27.5%;
+    text-align: start;
+    display: inline-block;
+    margin: 15px 10px;
+}
+
+.four .partition h3 {
+    float: left;
+    font-weight: normal;
+}
+
+.four .partition>div>p {
+    float: right;
+    color: #686868;
+    font-size: 18px;
+}
+
+.four .partition>p {
+    line-height: 32px;
+    color: #686868;
+}
+
+.four .partition>div {
+    border-bottom: 1px solid #efefef;
+    padding: 5px 5px 0 5px;
+}
+
+.part {
+    padding: 45px 0 !important;
+}

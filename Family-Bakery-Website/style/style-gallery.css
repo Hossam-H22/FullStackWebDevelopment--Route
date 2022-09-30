@@ -1,0 +1,32 @@
+nav {
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.09);
+}
+
+.container {
+    height: 290px;
+    background-image: unset !important;
+    background-color: #f8f8f8 !important;
+    color: #000000 !important;
+}
+
+.one .FirstSubtitle {
+    font-size: 36px !important;
+}
+
+.one .SecondSubtitle {
+    color: #686868;
+}
+
+.four {
+    padding: 60px 7% 90px 7%!important;
+}
+
+.four .partition {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 32.9%;
+    float: left;
+    margin: 2.5px;
+}
