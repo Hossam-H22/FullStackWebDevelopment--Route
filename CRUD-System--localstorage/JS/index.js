@@ -4,27 +4,18 @@ var productPriceInput = document.getElementById('productPriceInput');
 var productCategoryInput = document.getElementById('productCategoryInput');
 var productDescriptionInput = document.getElementById('productDescriptionInput');
 var searchInput = document.getElementById('search');
+var errorList = document.querySelector('.Error');
 var ProductsContainer = [];
+var regexPrice = new RegExp(/^(\d*([.,](?=\d{3}))?\d+)+((?!\2)[.,]\d\d)?$/);
+var Errors = [];
 
 getDataFromStorage();
 
-// database
-// var db = window.openDatabase("data.db", "1.0", "CRUD DataBase", 1000000);
-// db.transaction(function(tx) {
-//     tx.executeSql('SELECT * FROM crud', [], function (tx, resultado) {
-//         var rows = resultado.rows;
-//         var tr = '';
-//         for(var i = 0; i < rows.length; i++){
-//                 tr += (rows[i].name+' <br> ');                
-//         }
-//         console.log("in data base"); 
-//         console.log(tr); 
-
-//     }, null);
-// });
 
 
-function addOrUpdate(){
+function addOrUpdate(){ 
+    if (!checkValidateInput()) return;
+
     if (document.getElementById('product-btn').innerHTML == "Add Product") addProduct();
     else addExistingProduct();
         
@@ -81,12 +72,45 @@ function displayProducts(){
 
 function checkValidateInput()
 {
-    var regexText = /^[A-Za-z]{3,500}$/;
-    var regexPrice = /^(\d*([.,](?=\d{3}))?\d+)+((?!\2)[.,]\d\d)?$/;
+    var done = true;
+    if (productNameInput.value == "") {
+        Errors.push("Empty Name");
+        done = false;
+    }
+
+    if (productPriceInput.value == "") {
+        Errors.push("Empty Price");
+        done = false;
+    } 
+    else if (productPriceInput.value.search(regexPrice)) {
+        Errors.push("Invalid Price");
+        done = false;
+    }
+
+    if (productCategoryInput.value == "") {
+        Errors.push("Empty Category");
+        done = false;
+    }
+    
+    if (productDescriptionInput.value == "") {
+        Errors.push("Empty Description");
+        done = false;
+    }
+    
+
+    showError();
+    return done;
 }
 
 
-
+function showError() {
+    var cartoona = ``;
+    for (var i = 0; i < Errors.length; i++) {
+        cartoona += `<li>${Errors[i]}</li>`
+    }
+    errorList.innerHTML = cartoona;
+    Errors = [];
+}
 
 
 

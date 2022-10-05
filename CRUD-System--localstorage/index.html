@@ -20,30 +20,35 @@
     <h1 class="text-uppercase text-center pt-5 fw-bolder">crud System</h1>
 
     <div class="my-5">
-      <input type="text" class="form-control mb-3 d-none" name="name" id="productIdInput">
+      <input type="text" onfocus="showError()" class="form-control mb-3 d-none" name="name" id="productIdInput">
 
       <label for="productNameInput">Product Name :</label>
-      <span class="text-danger ms-2" id="nameErorr"></span>
-      <input type="text" class="form-control mb-3" name="name" id="productNameInput">
+      <!-- <span class="text-danger ms-2" id="nameErorr"></span> -->
+      <input type="text" onfocus="showError()" class="form-control mb-3" name="name" id="productNameInput">
 
 
       <label for="productPriceInput">Product Price :</label>
-      <span class="text-danger ms-2" id="priceErorr"></span>
-      <input type="text" class="form-control mb-3" name="price" id="productPriceInput">
+      <!-- <span class="text-danger ms-2" id="priceErorr"></span> -->
+      <input type="text" onfocus="showError()" class="form-control mb-3" name="price" id="productPriceInput">
 
 
       <label for="productCategoryInput">Product Category :</label>
-      <span class="text-danger ms-2" id="categoryErorr"></span>
-      <input type="text" class="form-control mb-3" name="category" id="productCategoryInput">
+      <!-- <span class="text-danger ms-2" id="categoryErorr"></span> -->
+      <input type="text" onfocus="showError()" class="form-control mb-3" name="category" id="productCategoryInput">
 
 
       <label for="productDescriptionInput">Product Description :</label>
-      <span class="text-danger ms-2" id="descriptionErorr"></span>
-      <textarea type="text" class="form-control mb-3" name="description" id="productDescriptionInput"
-        rows="4"></textarea>
+      <!-- <span class="text-danger ms-2" id="descriptionErorr"></span> -->
+      <textarea type="text" onfocus="showError()" class="form-control mb-3" name="description"
+        id="productDescriptionInput" rows="4"></textarea>
 
 
       <button class="btn btn-info mt-3" onclick="addOrUpdate();" id="product-btn">Add Product</button>
+    </div>
+
+    <div class="text-danger text-start mb-4 px-3">
+      <ul class="Error">
+      </ul>
     </div>
 
     <div class="py-4"></div>
