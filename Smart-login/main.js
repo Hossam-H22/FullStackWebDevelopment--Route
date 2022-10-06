@@ -11,16 +11,11 @@ var curruntPage = '';
 
 
 // Url Configuration
-if (location.hostname != '') {
-    baseURL = 'https://' + location.hostname;
-    curruntPage = location.pathname;
-}
-else{
-    var pathparts = location.pathname.split('/');
-    for (var i = 0; i < pathparts.length - 1; i++) baseURL += '/' + pathparts[i];
-    curruntPage = "/"+pathparts[pathparts.length - 1];
-}
-
+var pathparts = location.pathname.split('/');
+for (var i = 0; i < pathparts.length - 1; i++) baseURL += '/' + pathparts[i];
+curruntPage = "/"+pathparts[pathparts.length - 1];
+if (location.hostname != '') baseURL = 'https://' + location.hostname;
+// console.log(baseURL);
 
 
 // Get Data From Local Storage
