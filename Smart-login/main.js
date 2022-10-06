@@ -11,6 +11,7 @@ var curruntPage = '';
 
 
 // Url Configuration
+if (location.hostname != '') baseURL = "https://" +  location.hostname;
 var pathparts = location.pathname.split('/');
 for (var i = 0; i < pathparts.length - 1; i++) baseURL += '/' + pathparts[i];
 curruntPage = "/"+pathparts[pathparts.length - 1];
@@ -95,6 +96,7 @@ function login() {
         if (usersArray[i].email.toLowerCase() == signinEmail.value.toLowerCase() && usersArray[i].password == signinPassword.value) {
             localStorage.setItem('User', usersArray[i].name);
             window.location.href = baseURL + '/home.html';
+            // window.location.href = '/home.html';
         } 
         else message.innerHTML = '<span class="p-2 text-danger">incorrect email or password</span>';
     }
