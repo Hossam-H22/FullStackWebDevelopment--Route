@@ -6,7 +6,7 @@ var signinPassword = document.getElementById('signinPassword');
 var message = document.getElementById('message');
 var userName;
 var usersArray = [];
-var baseURL = '';
+var baseURL = location.hostname;
 var curruntPage = '';
 
 
@@ -14,8 +14,7 @@ var curruntPage = '';
 var pathparts = location.pathname.split('/');
 for (var i = 0; i < pathparts.length - 1; i++) baseURL += '/' + pathparts[i];
 curruntPage = "/"+pathparts[pathparts.length - 1];
-if (location.hostname != '') baseURL = 'https://' + location.hostname;
-// console.log(baseURL);
+
 
 
 // Get Data From Local Storage
