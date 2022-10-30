@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="CSS/main.css" />
+
+  <title>Weather</title>
+</head>
+
+<body>
+
+
+
+
+
+  <section id="now" class="now sec-py">
+    <div class="container">
+
+      <div class="row pb-5">
+        <div class="col-6">
+          <h1 class="city">Cairo, Egypt</h1>
+          <p class="date">Friday 28 October</p>
+        </div>
+        <div class="col-6">
+          <input type="text" class="form-control" placeholder="country ...">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 border-end text-center day-degree">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-6 icon-currunt pe-0">
+              <img src="" alt="" class="icon w-100">
+            </div>
+            <div class="col-6 ps-0">
+              <h1 class="degree-currunt fs-5rem fw-bolder">21&deg;</h1>
+              <p class="condition fs-3 fw-semibold">Sunny</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 weather-details">
+          <div class="row d-flex justify-content-evenly align-items-center h-100 text-center">
+            <div class="col-4 high-degree pb-3 ps-md-5">
+              <p class="number">23&deg;</p>
+              <p class="text text-white-75">High</p>
+            </div>
+            <div class="col-4 wind ps-md-5">
+              <p class="number">7mph</p>
+              <p class="text text-white-75">Wind</p>
+            </div>
+            <div class="col-4 sunrise ps-md-5">
+              <p class="number">06:12 AM</p>
+              <p class="text text-white-75">Sunrise</p>
+            </div>
+            <div class="col-4 low-degree ps-md-5">
+              <p class="number">14&deg;</p>
+              <p class="text text-white-75">Low</p>
+            </div>
+            <div class="col-4 rain ps-md-5">
+              <p class="number">10%</p>
+              <p class="text text-white-75">Rain</p>
+            </div>
+            <div class="col-4 sunset ps-md-5">
+              <p class="number">05:05 PM</p>
+              <p class="text text-white-75">Sunset</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <section id="today" class="today sec-py">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 fs-4">
+          Todays Weather
+        </div>
+        <div class="times my-3">
+          <div class="swiper mySwiper w-100">
+            <div class="swiper-wrapper">
+              <!-- <div class="swiper-slide d-flex flex-column align-items-center justify-content-center">
+                <div class="day-hour py-2 text-center rounded w-100">
+                  <p class="hour">3am</p>
+                  <img src="" alt="" class="w-100">
+                  <p class="hour-degree">14"</p>
+                </div>
+              </div> -->
+            </div>
+            <!-- <div class="swiper-pagination"></div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <section id="next-days" class="next-days sec-py">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <div class="col-12 fs-4">
+          Next 10 days
+        </div>
+
+        <div class="col-12">
+          <div class="row days d-flex justify-content-center">
+
+            <!-- days items -->
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="mt-4 py-4 w-100 text-center">
+    Copyright © 2022 Developed & Mentain By <a href="https://github.com/Dragon-H22"
+      class="text-white fw-semibold text-decoration-none">Eng.Hossam Hatem</a>
+  </footer>
+
+
+
+  <script src="JS/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        1200: {
+          slidesPerView: 10,
+        },
+        992: {
+          slidesPerView: 8,
+        },
+        768: {
+          slidesPerView: 6,
+        },
+        576: {
+          slidesPerView: 4,
+        }
+      }
+    });
+  </script>
+
+
+</body>
+
+</html>

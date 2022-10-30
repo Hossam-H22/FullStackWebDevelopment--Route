@@ -1,0 +1,70 @@
+.fs-1rem {
+  font-size: 1rem;
+}
+
+.fs-2rem {
+  font-size: 2rem;
+}
+
+.fs-3rem {
+  font-size: 3rem;
+}
+
+.fs-4rem {
+  font-size: 4rem;
+}
+
+.fs-5rem {
+  font-size: 5rem;
+}
+
+.sec-py {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.box-sizing-border {
+  box-sizing: border-box;
+}
+
+.text-white-75 {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #023E8A, #00B4D8);
+  color: white;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+.day-hour, .day {
+  background-color: #0077B6;
+}
+
+.day p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.weather-details {
+  font-size: 1.4rem;
+}
+@media (max-width: 768px) {
+  .weather-details {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .day-degree {
+    border-right: none !important;
+  }
+}
+
+footer {
+  box-shadow: rgba(0, 0, 0, 0.2) 0 0 20px;
+}/*# sourceMappingURL=main.css.map */
