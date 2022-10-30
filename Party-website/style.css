@@ -53,7 +53,7 @@ a:hover, .close-btn:hover{
 
 #main {
     margin-top: 250px;
-    margin-left: 250px;
+    /* margin-left: 250px; */
     transition: 0.5s;
 }
 
